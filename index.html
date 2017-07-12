@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>JavaScript</title>
+		<style type="text/css">
+			#shape{
+				width:200px;
+				height:200px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Test Your Reactions!</h1>
+		<p>Click on the boxes and circles as quickly as you can!</p>
+		<p>Your time: <span id ="timeTaken"></span></p>
+		<div id="shape"></div>
+		<script type="text/javascript">
+			var start = new Date().getTime();
+			
+			document.getElementById("shape").onclick=function(){
+			document.getElementById("shape").style.display = "none";
+			var end = new Date().getTime();
+			var timeTaken = (end- start) /1000; /*divided by 1000 to get in seconds*/
+			document.getElementById('timeTaken').innerHTML = timeTaken+"s";
+				
+			}
+		</script>
+	</body>
+</html>
