@@ -21,8 +21,11 @@
 			function makeShapeAppear(){
 				var top = Math.random() * 200; /*generate random numbers*/
 				var left = Math.random() * 200; /*generate random numbers*/
+				var width = Math.random() * 400; /*generate random numbers*/
 				document.getElementById('shape').style.top = top+"px";/*Use top variable to define top pixels*/
 				document.getElementById('shape').style.left = left+"px";/*Use top variable to define left pixels*/
+				document.getElementById('shape').style.width = width+"px";/*Use top variable to define left pixels*/
+				document.getElementById('shape').style.height = width+"px";/*Use top variable to define left pixels*/
 				document.getElementById("shape").style.display = "block";
 				start = new Date().getTime();
 			}
